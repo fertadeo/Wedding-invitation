@@ -97,6 +97,9 @@ font-size: 1.5rem;
     
 }
 
+.counter{
+    margin: 2%;
+}
 .counter h2{
     display: flex;
     flex-direction: row;
@@ -153,13 +156,13 @@ display: flex;
 flex-direction: column;
 align-items: center;
 font-family: 'Montserrat', sans-serif;
-font-size: 1rem;
+font-size: 1.4rem;
 
 }
 
 .ceremony img{
-    width: 30%;
-    height: 30%;
+    width: 22%;
+    height: 22%;
     margin: 30px;
 }
 .ceremony h4{
@@ -172,7 +175,7 @@ width: 30vw;
 display: flex;
 flex-direction: column;
 align-items: center;
-font-size: 1rem;
+font-size: 1.4rem;
 
 }
 .party h4{
@@ -180,8 +183,8 @@ font-size: 1rem;
     margin-bottom: 20px;
 }
 .party img{ 
-    width: 30%;
-    height: 30%;
+    width: 22%;
+    height: 22%;
     padding: 10px;
     margin: 30px;
 
@@ -232,13 +235,12 @@ font-weight: 400;
 
 
 .asistance{
-    background-image: url("./img/asis-back.png"), url("./img/asis-back-rotate.png");
-    background-repeat: no-repeat, no-repeat;
-    background-size: 40%;
-    background-position: -25%, 120%;
-    background-position-y: 1%, 0%;
     width: 100vw;
     height: 100vh;
+    background-image: url("./img/frame3.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -427,13 +429,21 @@ padding: 5px 10px;
 @media (max-width: 450px) {
 
 .portrait{
-        height: 70vh;
+        height: 63vh;
         font-size: 1rem;
         background-size: 140%;
-        background-attachment: scroll;
+    }
+    .subtitle{
+        margin-top: 30px;
     }
     .portrait .main-title h1, h2{
+        margin-top: 30px;
         font-size: 4rem;
+    }
+    .main-title h4{
+        margin-top: 20px;
+        width: 60%;
+        font-size: 1rem;
     }
     .portrait h3{
         font-size: 1.1rem;
@@ -451,21 +461,32 @@ padding: 5px 10px;
         margin-top: 0;
     }
      .time h4{
-        font-size: 1.5rem;
-
+        font-size: 1.2rem;
+    }
+    .time small {
+        font-size: 1rem;
     }
     .date{ 
      display: flex;
      align-items: center;
      height: 100px;
     }
+    .date h2{
+        font-size: 1rem;
+    }
+
+    .section-two{
+        width: 100%;
+        height: auto;
+    }
     .ceremony img{
-        width: 50%;
-        height: 40%;
+        width: 40%;
+        height: 35%;
     }
     .ceremony, .party{
         width: 60%;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+        height: 60%;
     }
     .party{
         text-align: center;
@@ -473,13 +494,26 @@ padding: 5px 10px;
     }
     .party img{
         width: 50%;
-        height: 40%;
+        height: 70%;
+    }
+    .ceremony button, .party button{
+    font-size: 0.8rem;
+    width: 90%;
+    margin: 10px;
+    padding: 10;
+    }
+    .ceremony p, .party p {
+        text-align: justify;
+    }
+    .party button{
+        margin-bottom: 50px;
     }
     .dress-code{
         text-align: center;
-        margin: 0;
-        padding: 0;
-        height: 20vh;
+        margin: 10px;
+        padding: 30px;
+        height: auto;
+        flex-direction: column;
 
     }
     .dress-code p{
@@ -492,15 +526,17 @@ padding: 5px 10px;
         font-weight: 200;
     }
     .asistance{
-        height: 50vh;
+        height: 75vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-position-y: 10%;
-        background-size: 40%;
+        background-position-y: 0%;
+        background-size:100%;
+        background-color: #F8F8F6;
     
     }
     .asistance-title{
+        width: 80%;
         font-size: 1rem;
         text-align: center;
     }
@@ -510,37 +546,28 @@ padding: 5px 10px;
         margin: 10px 0px 40px 0px;
     }
     .asis-price{
-    font-size: 1.2rem;
-    text-align: center;
-    height: auto;
-    letter-spacing: 0px;
-    margin-top: 1px;
+         font-size: 1.2rem;
+         text-align: center;
+         height: auto;
+         letter-spacing: 0px;
+         margin-top: 1px;
     }
-
-    .buttons{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
+    .asistance button{
+        font-size: 0.6rem;
+        border-radius: 8px;
+        width: 100%;
     }
-    .buttons button{
-     font-size: 1.3rem;
-     width: 300px;
-     height: 36%;
-     border-radius: 5px;
-     text-align: center;
-     padding: 5px 5px;
-
-    }
+    
 
     .buttons .sec{
         margin: 0;
-        margin-left: 10px;
+        
     }
     .modal-content{
-        width: 90%;
-        height: auto;
+        width: 80%;
+        height: 30%;
+        background-size: 100%;
+        background-color: #F8F8F6;
     }
     .modal-content h2{
         font-size: 3rem;
@@ -558,16 +585,28 @@ padding: 5px 10px;
 
 @media (max-width: 380px) {
     .portrait{
-        height: 75vh;
+        height: 47%;
         font-size: 1rem;
-        background-size: 110%;
-        background-attachment: scroll;
+        background-size: 100%;
+        background-repeat: no-repeat;
     }
     .portrait .main-title h1, h2{
-        font-size: 2.5rem;
+        font-size: 2.9rem;
+        top: 65%;
     }
     .portrait h3{
         font-size: 1rem;
+        top: 59%;
+    }
+    .portrait h4{
+        font-size: 0.7rem ;
+    }
+
+    .counter h2{
+        font-size: 1rem;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
     }
     .section-two-dates{
         display: flex;
@@ -575,7 +614,10 @@ padding: 5px 10px;
        
     }
     .date .time h4{
-        font-size: 1.5rem;
+        font-size: 0.9rem;
+    }
+    .time small{
+        font-size: 0.8rem;
     }
     .date{
      padding-bottom: 10px;
@@ -584,75 +626,78 @@ padding: 5px 10px;
     .ceremony img{
         width: 18vw;
     }
+
+    .ceremony h4{
+     font-size: 1rem;
+    }
     .ceremony, .party{
-        width: 100%;
+        width: 70%;
         font-size: 0.8rem;
     }
     .party{
         text-align: center;
-        width: 100%;
+        width: 70%;
+    }
+    .party h4{
+        font-size: 1rem;
     }
     .party img{
-        width: 18vw;
+        width: 22vw;
         /* height: 15vh; */
     }
     .dress-code{
+        flex-direction: column;
         text-align: center;
         margin: 0;
-        padding: 0;
-        height: 30vh;
+        padding: 20px;
+        height: 20vh;
 
+    }
+
+    button{
+        width: 200px;
+        margin: 2px;
+        padding: 6px;
+        font-size: 0.8rem;
     }
     .dress-code p{
         font-size: 1rem;
-        font-weight: 700;
-    }
-    .hashtag{
-        padding-top: 40px;
-        text-align: center;
-        height: 80%;
-    }
-    .hashtag img{
-        margin-top: 0;
-        width: 30%;
-        height: 30%;
-    }
-    .hashtag .first, .sec, .thr{
-        margin-top: 5%;
-        text-align: center;
-    }
-    .first{
-        font-size: 1rem;
-    }
-    .sec{
-        font-size: 1rem;
-        font-weight: 400;
-    }
-    .thr{
-        font-size: 1.5rem;
         font-weight: 500;
     }
     .asistance{
-        height: 80vh;
+        height: 55vh;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-position-y: 10%;
+        background-position-y: 0;
+        background-size: 100%;
+       background-color: #F8F8F6;
     
+    }
+    .asistance a{
+        margin-bottom: 30px;
     }
     .asistance-title{
         font-size: 1rem;
         text-align: center;
+        margin-top: 83px;
     }
     .asistance .asis-final-date{
-        font-size: 1rem;
-        letter-spacing: 2px;
+        font-size: 1.2rem;
+        color: #143866;
+        letter-spacing: 1px;
     }
-    .asis-price{
-    font-size: 0.8rem;
+    .asis-price p{
+    margin-top: 20px;
+    font-size: 0.5rem;
     text-align: center;
     }
-
+    .gift {
+        font-size: 1rem;
+        width: 80%;
+        text-align: center;
+    }
     .buttons{
         display: flex;
         align-items: center;
@@ -661,21 +706,31 @@ padding: 5px 10px;
 
     }
     .buttons button{
-     font-size: 0.7rem;
-     width: 80%;
-     height: 30%;
+     font-size: 0.8rem;
+     width: 130%;
+     height: 100%;
      border-radius: 5px;
      text-align: center;
+     margin-bottom: 40%;
+     
     }
 
     .buttons .sec{
         margin: 0;
         margin-left: 10px;
     }
+    .thanks{
+        margin: 3%;
+    }
     .thanks p{
         font-size: 1rem;
         text-align: center;
-        font-weight: 300 ;
+        font-weight: 300;
+    }
+    .modal-content{
+        height: 30%;
+        width: 80%;
+        left: 47%;
     }
 }
 
