@@ -472,21 +472,22 @@ padding: 5px 10px;
      height: 100px;
     }
     .date h2{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .section-two{
         width: 100%;
-        height: auto;
+        height: 110%;
     }
     .ceremony img{
-        width: 40%;
+        width: 37%;
         height: 35%;
     }
     .ceremony, .party{
         width: 60%;
         font-size: 1.1rem;
         height: 60%;
+        margin-top: 0%;
     }
     .party{
         text-align: center;
@@ -510,7 +511,6 @@ padding: 5px 10px;
     }
     .dress-code{
         text-align: center;
-        margin: 10px;
         padding: 30px;
         height: auto;
         flex-direction: column;
@@ -552,15 +552,24 @@ padding: 5px 10px;
          letter-spacing: 0px;
          margin-top: 1px;
     }
+    .gift{
+        font-size: 0.9rem;
+        
+    }
     .asistance button{
-        font-size: 0.6rem;
+        font-size: 0.8rem;
         border-radius: 8px;
-        width: 100%;
+        width: 80%;
     }
     
 
     .buttons .sec{
-        margin: 0;
+        font-size: 0.9rem;
+        border-radius: 8px;
+        width: 110%;
+        margin-left: -10px;
+
+
         
     }
     .modal-content{
