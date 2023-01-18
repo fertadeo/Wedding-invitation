@@ -427,11 +427,14 @@ padding: 5px 10px;
 }
 
 @media (max-width: 450px) {
-
+    body{
+        overflow-x: hidden;
+     }
 .portrait{
-        height: 63vh;
+        height: 96vh;
         font-size: 1rem;
-        background-size: 140%;
+        background-size: 168%;
+        background-position-y: 28px;
     }
     .subtitle{
         margin-top: 30px;
@@ -439,6 +442,9 @@ padding: 5px 10px;
     .portrait .main-title h1, h2{
         margin-top: 30px;
         font-size: 4rem;
+    }
+    .main-title h1{
+        top: 65%;
     }
     .main-title h4{
         margin-top: 20px;
@@ -448,6 +454,9 @@ padding: 5px 10px;
     .portrait h3{
         font-size: 1.1rem;
         padding-right: 5px;
+        font-weight: 300;
+        left: 65px;
+        top: 60%;
     }
     .section-two-dates{
         display: flex;
@@ -461,18 +470,30 @@ padding: 5px 10px;
         margin-top: 0;
     }
      .time h4{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     .time small {
         font-size: 1rem;
     }
+    .counter{
+        margin-top: 5%;
+        font-weight: 100;
+    }
+
+     .counter2 {
+        display: flex;
+        flex-direction: row;
+        margin-top: -5%;
+    }
     .date{ 
      display: flex;
      align-items: center;
-     height: 100px;
+     height: 142px;
+     flex-direction: column;
     }
     .date h2{
-        font-size: 1.2rem;
+        font-size: 1rem;
+        flex-direction: row;
     }
 
     .section-two{
@@ -526,7 +547,7 @@ padding: 5px 10px;
         font-weight: 200;
     }
     .asistance{
-        height: 85vh;
+        height: 73vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -535,8 +556,8 @@ padding: 5px 10px;
         background-color: #F8F8F6;
         background-image: none;
         background-image: url('./img/png-03.png'), url('./img/png-04.png');
-        background-position-x: -52px, 249px;
-        background-position-y: -14px, 361px;
+        background-position-x: -52px, 250px;
+        background-position-y: -19px, 255px;
         
     
     }
@@ -544,6 +565,7 @@ padding: 5px 10px;
         width: 80%;
         font-size: 1rem;
         text-align: center;
+        margin-top: 29px;
     }
     .asis-final-date{
         font-size: 1.2rem;
@@ -558,11 +580,22 @@ padding: 5px 10px;
          margin-top: 1px;
     }
     .gift{
-        font-size: 1.1rem;
-        width: 80%;
+        font-size: 0.9rem;
+        width: 100%;
         text-align: center;
-        color: #143866;
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: -4px;
         
+    }
+    .gift-frase{
+        display: flex;
+        height: 12%;
+        align-items: center;
+        justify-content: center;
+        background-color: #B2C4C7;
+        text-transform: uppercase;
+
     }
     .asistance button{
         font-size: 0.8rem;
@@ -601,6 +634,7 @@ padding: 5px 10px;
     .thanks{
 
         padding: 20px;
+        background-color: #81A0D4;
     }
     .thanks p{
         width: 90%;
@@ -608,7 +642,7 @@ padding: 5px 10px;
         font-size: 1.1rem;
         text-align: center;
         justify-content: center;
-        font-weight: 300 ;
+        font-weight: 300;
     }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
