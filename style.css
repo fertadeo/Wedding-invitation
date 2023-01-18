@@ -130,17 +130,21 @@ font-size: 1.5rem;
  
 }
 .date{ 
+    width: 100%;
     display: flex;
     height: 40%;
     align-items: center;
     justify-content: space-around;
     color: #fff ;
     background-color: #81A0D4;
-    
+    flex-direction: column;
 }
 
 .counter{
     margin: 2%;
+}
+.counter2{
+    display: flex;
 }
 .counter h2{
     display: flex;
@@ -269,12 +273,7 @@ button{
 .dress-code p{
 margin-top: 20px;
 font-weight: 400;
-
-
-
 }
-
-
 
 .asistance{
     width: 100vw;
@@ -310,6 +309,15 @@ font-weight: 400;
 .gift{
     color: #143866;
     font-size: 1.5rem;
+}
+.gift-frase{
+    display: flex;
+    height: 13%;
+    align-items: center;
+    justify-content: center;
+    background-color: #B2C4C7;
+    text-transform: uppercase;
+
 }
 .asis-price{
     font-size: 1.5rem;
@@ -504,7 +512,6 @@ padding: 5px 10px;
     .section-two-dates{
         display: flex;
         flex-direction: column;
-       
     }
     .time{
         display: flex;
@@ -513,7 +520,7 @@ padding: 5px 10px;
         margin-top: 0;
     }
      .time h4{
-        font-size: 1.3rem;
+        font-size: 1.6rem;
     }
     .time small {
         font-size: 1rem;
