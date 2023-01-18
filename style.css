@@ -431,9 +431,9 @@ padding: 5px 10px;
         overflow-x: hidden;
      }
 .portrait{
-        height: 96vh;
+        height: 95vh;
         font-size: 1rem;
-        background-size: 173%;
+        background-size: 190%;
         background-position-y: 28px;
     }
     .subtitle{
