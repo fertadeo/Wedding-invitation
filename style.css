@@ -433,7 +433,7 @@ padding: 5px 10px;
 .portrait{
         height: 96vh;
         font-size: 1rem;
-        background-size: 168%;
+        background-size: 173%;
         background-position-y: 28px;
     }
     .subtitle{
@@ -519,7 +519,7 @@ padding: 5px 10px;
         height: 70%;
     }
     .ceremony button, .party button{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     width: 220px;
     margin: 0px;
     padding: 10;
@@ -590,7 +590,7 @@ padding: 5px 10px;
     }
     .gift-frase{
         display: flex;
-        height: 12%;
+        height: 13%;
         align-items: center;
         justify-content: center;
         background-color: #B2C4C7;
@@ -598,7 +598,7 @@ padding: 5px 10px;
 
     }
     .asistance button{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         border-radius: 8px;
         width: 220px;
         margin-top: -10px;
@@ -611,6 +611,7 @@ padding: 5px 10px;
         font-size: 0.9rem;
         border-radius: 8px;
         width: 220px;
+        height: 38px;
         margin-left: 23px;
         margin-top: -39px;
 
