@@ -88,7 +88,7 @@ html{
 .main-title h1{
     display: flex;
     font-family: 'Great Vibes', cursive;
-    font-size: 8rem;
+    font-size: 7rem;
     font-weight: 100;
     color: #fff;
     position: absolute;
@@ -420,7 +420,59 @@ padding: 5px 10px;
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
+@media  (max-width: 1200px)  {
+    .portrait{
+        height: 100vh;
+        font-size: 3rem;
+        background-size: 90%;
+    }
+    .portrait h3{
+        font-size: 1.2rem;
+    }
+    .portrait h4{
+        font-size: 1.2rem;
+    }
+    .main-title h1{
+        font-size: 5rem;
+    }
+    .scroll-down{
+        bottom: 10%;
+    }
+    .section-two{
+       height: 180%;
+       width: 100%;
+    }
+    .section-two-dates{
+        display: flex;
+        flex-direction: column;  
+    }
+    .date h4{
+        margin-top: 20%;
+    }
+    .date h2{
+        font-size: 1.5rem;
+        padding-top: 15px;
+        
+    }
+    .ceremony img {
+        width: 80px;
+    }
+    .party img{
+    width: 80px;
+    }
+    .dress-code p {
+        font-size: 1.3rem;
+    }
+  
 
+
+
+    .gift{
+        font-size: 1.2rem;
+    }
+
+
+}
 @media  (max-width: 767px) {
     .portrait{
         height: 75vh;
