@@ -526,7 +526,7 @@ padding: 5px 10px;
         font-weight: 200;
     }
     .asistance{
-        height: 90vh;
+        height: 85vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -535,8 +535,8 @@ padding: 5px 10px;
         background-color: #F8F8F6;
         background-image: none;
         background-image: url('./img/png-03.png'), url('./img/png-04.png');
-        background-position-x: -74px, 253px;
-        background-position-y: -14px, 386px;
+        background-position-x: -52px, 249px;
+        background-position-y: -14px, 361px;
         
     
     }
