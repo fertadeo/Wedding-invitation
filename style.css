@@ -696,23 +696,18 @@ padding: 5px 10px;
         font-weight: 300;
     }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-    html {
-      transform: rotate(-90deg);
-      transform-origin: left top;
-      width: 100vh;
-      overflow-x: hidden;
-      position: absolute;
-      top: 100%;
-      left: 0;
-    }
-  }
 @media (max-width: 380px) {
     .portrait{
-        height: 47%;
+        height: 98%;
         font-size: 1rem;
-        background-size: 100%;
+        background-size: 160%;
         background-repeat: no-repeat;
+        background-position-y: 10%;
+    }
+    .scroll-down{
+        width: 20px;
+        height: 20px;
+        bottom: 7%;
     }
     .portrait .main-title h1, h2{
         font-size: 2.9rem;
@@ -724,6 +719,7 @@ padding: 5px 10px;
     }
     .portrait h4{
         font-size: 0.7rem ;
+        top: 78%;
     }
 
     .counter h2{
@@ -789,15 +785,18 @@ padding: 5px 10px;
         font-weight: 500;
     }
     .asistance{
-        height: 55vh;
+        height: 87%;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         background-position-y: 0;
-        background-size: 100%;
+        background-size: 55%, 90%;
        background-color: #F8F8F6;
-    
+       background-image: none;
+       background-image: url('./img/png-03.png'), url('./img/png-04.png');
+       background-position-x: -52px, 250px;
+       background-position-y: -19px, 255px;
     }
     .asistance a{
         margin-bottom: 30px;
@@ -805,7 +804,7 @@ padding: 5px 10px;
     .asistance-title{
         font-size: 1rem;
         text-align: center;
-        margin-top: 83px;
+        margin-top: 0px;
     }
     .asistance .asis-final-date{
         font-size: 1.2rem;
@@ -842,9 +841,11 @@ padding: 5px 10px;
     .buttons .sec{
         margin: 0;
         margin-left: 10px;
+        width: 220px;
+        height: 34px;
     }
     .thanks{
-        margin: 3%;
+        width: 100%;
     }
     .thanks p{
         font-size: 1rem;
