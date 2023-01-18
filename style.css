@@ -494,20 +494,20 @@ padding: 5px 10px;
         width: 60%;
     }
     .party img{
-        width: 50%;
+        width: 45%;
         height: 70%;
     }
     .ceremony button, .party button{
     font-size: 0.8rem;
     width: 220px;
-    margin: 10px;
+    margin: 0px;
     padding: 10;
     }
     .ceremony p, .party p {
         text-align: justify;
     }
     .party button{
-        margin-bottom: 50px;
+        margin-bottom: 60px;
     }
     .dress-code{
         text-align: center;
@@ -531,8 +531,12 @@ padding: 5px 10px;
         justify-content: center;
         align-items: center;
         background-position-y: 0%;
-        background-size: 100%;
+        background-size: 90%;
         background-color: #F8F8F6;
+        background-image: none;
+        background-image: url('./img/png-03.png'), url('./img/png-04.png');
+        background-position-x: -280px, 300px;
+        background-position-y: -40px, 150px;
     
     }
     .asistance-title{
